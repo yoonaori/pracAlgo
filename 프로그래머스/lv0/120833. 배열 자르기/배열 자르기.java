@@ -6,7 +6,7 @@ class Solution {
 	    
 	// numbers 배열을 num1번째 인덱스부터 num2번째 인덱스까지 
 	// answer 배열에 복사함 (0은 answer 배열에 복사할 때, 몇번째 인덱스부터 넣을 것인지 명시한 것)
-	// System.arraycopy(numbers, num1, answer, 0, num2);
+	// System.arraycopy(numbers, num1, answer, 0, num2-num1+1);
 	    
 	// return answer;
         
