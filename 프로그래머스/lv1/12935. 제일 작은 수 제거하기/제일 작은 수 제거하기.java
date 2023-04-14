@@ -18,6 +18,7 @@ class Solution {
             }
             
             //배열의 원소들과 최솟값을 비교하여 최솟값을 제외한 나머지 원소들 answer에 담아주기
+            //arr와 answer의 길이가 각각 다르므로 answer의 index값을 따로 선언해줌
             int index = 0;
             for(int i=0; i<arr.length; i++){
                 if(arr[i] == min){
