@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
+        // 입력받는 수는 10의 12제곱까지 가능하므로 int의 범위를 벗어남. 따라서 long으로 선언
         long sum = 0;
         Scanner sc = new Scanner(System.in);
 
