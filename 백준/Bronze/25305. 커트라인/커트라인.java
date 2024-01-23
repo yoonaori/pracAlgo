@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main{
@@ -16,17 +17,8 @@ public class Main{
             arr[i] = Integer.parseInt(st2.nextToken());
         }
 
-        // 점수가 담긴 배열을 내림차순으로 정렬
-        for(int i=0; i<total; i++){
-            for(int j=i+1; j<total; j++){
-                if(arr[i] < arr[j]){
-                    int tmp = arr[j];
-                    arr[j] = arr[i];
-                    arr[i] = tmp;
-                }
-            }
-        }
-
-        System.out.println(arr[award - 1]);
+        // 점수가 담긴 배열을 오름차순으로 정렬한 뒤, 커트라인 점수 출력
+        Arrays.sort(arr);
+        System.out.println(arr[total - award]);
     }
 }
